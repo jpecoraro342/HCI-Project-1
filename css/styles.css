@@ -3,13 +3,14 @@ body {
  }
 
 .chat-client-border {
-	min-height: 550px;
+	height: 100%;
 	border: 1px solid;
 	border-color: gray;
 }
 
 .chat-client {
-	height: 600px;
+	height: 65vh;
+	min-height: 200px;
 }
 
 .cl {
