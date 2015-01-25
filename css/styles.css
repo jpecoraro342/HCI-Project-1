@@ -1,5 +1,10 @@
+nav ul li a.selected {
+  text-decoration: none;
+  background-color: #006687;
+}
+
 body {
-        /*padding-top: 70px; */
+        padding-top: 50px; 
  }
 
 .chat-client-border {
@@ -85,14 +90,6 @@ ul {
 	border-radius: 10px;
 	border: 1px solid;
 	border-color: #CCCCCC;
-}
-
-.odd {
-
-}
-
-.even {
-
 }
 
 /*left chat is currently unused, however the appropriate styles to be used for a chat on the left side are col-xs-10 */
