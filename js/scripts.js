@@ -116,7 +116,7 @@ function addMessageToList(is_left_user, translated_message) {
 	user_node_span.setAttribute("class", "name-text");
 
 	var translated_node = document.createElement("span");
-	translated_node.setAttribute("class", "translate_text");
+	translated_node.setAttribute("class", "translate-text");
 	translated_node.appendChild(document.createTextNode(" [ " + translated_message + " ] "));
 
 	//To see if it is person 1 or 2 sending the message - temporary
