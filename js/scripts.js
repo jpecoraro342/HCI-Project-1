@@ -2,14 +2,43 @@ var languages = ["Afrikaans", "Albanian", "Arabic", "Azerbaijani", "Basque", "Be
 var languageToTranslateMap = { Afrikaans:'af', Albanian:'sq', Arabic:'ar', Azerbaijani:'az', Basque:'eu', Belarusian:'be', Bengali:'bn', Bulgarian:'bg', Catalan:'ca', ChineseSimplified:'zh-CN', ChineseTraditional:'zh-TW', Croatian:'hr', Czech:'cs', Danish:'da', Dutch:'nl', English:'en', Esperanto:'eo', Estonian:'et', Filipino:'tl', Finnish:'fi', French:'fr', Galician:'gl', Georgian:'ka', German:'de', Greek:'el', Gujarati:'gu', HaitianCreole:'ht', Hebrew:'iw', Hindi:'hi', Hungarian:'hu', Icelandic:'is', Indonesian:'id', Irish:'ga', Italian:'it', Japanese:'ja', Kannada:'kn', Korean:'ko', Latin:'la', Latvian:'lv', Lithuanian:'lt', Macedonian:'mk', Malay:'ms', Maltese:'mt', Norwegian:'no', Persian:'fa', Polish:'pl', Portuguese:'pt', Romanian:'ro', Russian:'ru', Serbian:'sr', Slovak:'sk', Slovenian:'sl', Spanish:'es', Swahili:'sw', Swedish:'sv', Tamil:'ta', Telugu:'te', Thai:'th', Turkish:'tr', Ukrainian:'uk', Urdu:'ur', Vietnamese:'vi', Welsh:'cy', Yiddish:'yi' };
 
 function addMessageToList() {
-	var ul = document.getElementById("messsages-list");
-	var li = document.createElement("li");
+	var isInvalidSelect = 0;
+	var select1 = document.getElementById("person1language"); 
+	var select2 = document.getElementById("person2language"); 
+
+	var select1error = document.getElementById("person1selecterror"); 
+	var select2error = document.getElementById("person2selecterror"); 
+
+	if (select1.value == "error") {
+		isInvalidSelect = 1;
+		select1error.setAttribute("class", "form-group has-error");
+	}
+	else {
+		select1error.setAttribute("class", "form-group");
+	}
+
+	if (select2.value == "error") {
+		isInvalidSelect = 1;
+		select2error.setAttribute("class", "form-group has-error");
+	}
+	else {
+		select2error.setAttribute("class", "form-group");
+	}
+
+	if (isInvalidSelect == 1) {
+		return;
+	}
 
 	var message_text_area = document.getElementById("message-text");
 	
 	var message = message_text_area.value;
+	if (message_text_area.value == "") {
+		return;
+	}
 	message_text_area.value = "";
 
+	var ul = document.getElementById("messsages-list");
+	var li = document.createElement("li");
 	
 	li.appendChild(document.createTextNode(message));
 
