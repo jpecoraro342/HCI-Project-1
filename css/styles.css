@@ -15,11 +15,15 @@ body {
 
 .list-container {
 	overflow: scroll;
+	padding-top:10px;
+}
+
+.temp-show {
+	background-color: orange;
 }
 
 textarea {
 	resize: none;
-	border-radius: 4px;
 
 	border:none;
 
@@ -38,6 +42,12 @@ textarea {
 
 .border {
 	border: 1px solid;
+	border-color: gray;
+}
+
+.border-no-top {
+	border: 1px solid;
+	border-top: 0px;
 	border-color: gray;
 }
 
@@ -72,7 +82,7 @@ ul {
 	margin-bottom: 5px;
 
 	list-style-type: none;
-	border-radius: 8px;
+	border-radius: 10px;
 	border: 1px solid;
 	border-color: #CCCCCC;
 }
@@ -85,11 +95,11 @@ ul {
 
 }
 
-/*left chat is currently unused, however the appropriate styles to be used for a chat on the left side are col-xs-8 */
+/*left chat is currently unused, however the appropriate styles to be used for a chat on the left side are col-xs-10 */
 .left-chat {
 	
 }
-/*right chat is currently unused, however the appropriate styles to be used for a chat on the right side are col-xs-8 col-xs-offset-4*/
+/*right chat is currently unused, however the appropriate styles to be used for a chat on the right side are col-xs-10 col-xs-offset-2*/
 .right-chat {
 	background-color: #AEE3F5;
 }
