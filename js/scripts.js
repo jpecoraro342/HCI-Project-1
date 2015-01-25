@@ -19,4 +19,18 @@ function addMessageToList() {
 	}
 	
 	ul.appendChild(li);
+
+	//scroll the scroll bar
+	$("#chat-frame").animate({
+		scrollTop:$("#chat-frame")[0].scrollHeight
+	}, 500);
 }
+
+//Recieve enter key presses when in message text
+$(document).ready(function(){
+	$("#message-text").keyup(function(event){
+    	if(event.keyCode == 13){
+        	$("#send-button").click();
+    	}
+	});
+});
