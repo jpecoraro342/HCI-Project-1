@@ -26,6 +26,7 @@ function addMessageToList() {
 	}
 
 	if (isInvalidSelect == 1) {
+		window.alert("Please select a language!");
 		return;
 	}
 
