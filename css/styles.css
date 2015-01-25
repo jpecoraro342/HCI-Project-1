@@ -85,13 +85,13 @@ ul {
 
 }
 
-/*left chat is unused, however the appropriate styles to be used for a chat on the left side are col-xs-8 */
+/*left chat is currently unused, however the appropriate styles to be used for a chat on the left side are col-xs-8 */
 .left-chat {
 	
 }
-/*right chat is unused, however the appropriate styles to be used for a chat on the right side are col-xs-8 col-xs-offset-4*/
+/*right chat is currently unused, however the appropriate styles to be used for a chat on the right side are col-xs-8 col-xs-offset-4*/
 .right-chat {
-	float: right;
+	background-color: #AEE3F5;
 }
 
 .name-text {
