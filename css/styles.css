@@ -13,8 +13,8 @@ body {
 	min-height: 200px;
 }
 
-.cl {
-	background-color: orange;
+.list-container {
+	overflow: scroll;
 }
 
 textarea {
@@ -60,4 +60,44 @@ textarea {
 
 .center-block {
 	float: none;
+}
+
+ul {
+	padding: 0px;
+}
+
+.message {
+	padding: 8px 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	list-style-type: none;
+	border-radius: 8px;
+	border: 1px solid;
+	border-color: #CCCCCC;
+}
+
+.odd {
+
+}
+
+.even {
+
+}
+
+/*left chat is unused, however the appropriate styles to be used for a chat on the left side are col-xs-8 */
+.left-chat {
+	
+}
+/*right chat is unused, however the appropriate styles to be used for a chat on the right side are col-xs-8 col-xs-offset-4*/
+.right-chat {
+	float: right;
+}
+
+.name-text {
+	font-weight:500;
+}
+
+.translate-text {
+
 }
