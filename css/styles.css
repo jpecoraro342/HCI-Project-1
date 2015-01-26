@@ -19,7 +19,7 @@ body {
 }
 
 .list-container {
-	overflow: scroll;
+	overflow-y: scroll;
 	padding-top:10px;
 }
 
